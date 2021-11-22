@@ -138,7 +138,7 @@ public class WeightedRoundRobinLoadBalancer {
         for(int i=0;i< times;i++)
         {
             try {
-                File file = new File("D:/CMPE275/test.txt");
+                File file = new File("D:/CMPE275/LoadBalancer/src/main/resources/Input/test.txt");
                 Scanner scan = new Scanner(file);
                 while (scan.hasNextLine()) {
                     scan.nextLine();
