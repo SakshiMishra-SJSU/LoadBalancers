@@ -13,6 +13,4 @@ public class Capacity implements Comparable<Capacity>{
     public Integer getCapacity() {
         return capacity;
     }
-
-
 }

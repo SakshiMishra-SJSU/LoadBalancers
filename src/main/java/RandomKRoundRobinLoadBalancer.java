@@ -78,13 +78,12 @@ public class RandomKRoundRobinLoadBalancer {
         for(int i=0;i< times;i++)
         {
             try {
-                File myObj = new File("D:/CMPE275/test.txt");
-                Scanner myReader = new Scanner(myObj);
-                while (myReader.hasNextLine()) {
-                    String data = myReader.nextLine();
-
+                File file = new File("D:/CMPE275/test.txt");
+                Scanner scan = new Scanner(file);
+                while (scan.hasNextLine()) {
+                    scan.nextLine();
                 }
-                myReader.close();
+                scan.close();
             } catch (FileNotFoundException e) {
                 System.out.println("An error occurred.");
                 e.printStackTrace();
